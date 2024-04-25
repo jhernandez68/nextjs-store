@@ -9,6 +9,8 @@ interface CategoryProps {
         category: string
     }
 }
+
+
 export default function category(props: CategoryProps){
 
     const { category } = props.params
