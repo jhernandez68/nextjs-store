@@ -5,7 +5,7 @@ interface CategoriesProps {
     params: {
         categories: string[];
     };
-    searchParams: {
+    searchParams: { //Este objeto sirve para recibir los parametros ejemplo ?id
         search?: string;
     };
 }
