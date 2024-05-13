@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+const { hostname } = require('os');
 const path = require('path')
 
 const nextConfig = {
@@ -8,6 +9,13 @@ const nextConfig = {
         //se añaden las variables a todos los datos
         prependData: `@import "main.sass"`,
       },
+      images:{
+        remotePatterns: [{
+          hostname: 'cdn.shopify.com',
+          protocol: 'https',
+        }
+      ]
+      }
 };
 
 module.exports = nextConfig

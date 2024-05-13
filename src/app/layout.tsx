@@ -10,16 +10,16 @@ const artifika = Artifika({
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className={artifika.className}>{children}
-      <Header></Header>
-      <Footer></Footer>
+      <body className={artifika.className}>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
-  );
+  )
 }

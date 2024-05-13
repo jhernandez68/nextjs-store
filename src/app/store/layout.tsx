@@ -2,9 +2,9 @@
 
 export default function Layout({children}: {children: React.ReactNode}) {
     return(
-        <div>
+        <main>
             <nav>Layout de store</nav>
             {children} 
-        </div>
+        </main>
     )
 }
